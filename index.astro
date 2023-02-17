@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Page.astro'
+import Container from '../components/Container.astro';
+import SignupForm from '../components/SignupForm.astro';
+const seo = {
+  title: 'ValuMetrics',
+  description: 'Value Investing at your Fingertips',
+}
+---
+
+<style>
+  .hero__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+  }
+</style>
+
+<Layout seo={seo}>
+  <Container narrow>
+    <article class="hero__article">
+      <h1 class="fade-in" id="black-bg">Coming Soon</h1>
+      <p class="fade-in" id="black-bg">Product Launch</p>
+      <SignupForm />
+    </article>
+  </Container>
+</Layout>
