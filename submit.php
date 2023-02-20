@@ -1,5 +1,9 @@
 <?php
-$email = $_GET['email'];
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+$email = $_POST['email'];
 
 // Open the CSV file for writing
 $file = fopen('emails.csv', 'a');
